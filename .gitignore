@@ -1,0 +1,17 @@
+# Personal Obsidian state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/appearance.json
+.obsidian/hotkeys.json
+.obsidian/graph.json
+.obsidian/cache/
+.obsidian/themes/
+.obsidian/plugins/recent-files-obsidian/data.json
+
+# Trash
+.trash/
+
+# OS
+desktop.ini
+Thumbs.db
+.DS_Store

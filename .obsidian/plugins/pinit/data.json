@@ -1,0 +1,10 @@
+{
+  "pins": {
+    "Atlas": [
+      "Atlas/Atlas.base"
+    ],
+    "Efforts": [
+      "Efforts/Efforts.base"
+    ]
+  }
+}

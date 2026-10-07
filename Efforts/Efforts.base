@@ -1,0 +1,28 @@
+filters:
+  and:
+    - file.inFolder("Efforts")
+    - file.ext == "md"
+    - file.hasTag("effort")
+properties:
+  status:
+    displayName: Status
+views:
+  - type: table
+    name: Active
+    filters:
+      and:
+        - status == "active"
+    order:
+      - file.name
+      - status
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: All
+    order:
+      - file.name
+      - status
+    sort:
+      - property: file.name
+        direction: ASC

@@ -1,0 +1,16 @@
+filters:
+  and:
+    - file.inFolder("Atlas")
+    - file.ext == "md"
+views:
+  - type: table
+    name: By tag
+    groupBy:
+      property: file.tags
+      direction: ASC
+    order:
+      - file.name
+      - file.tags
+    sort:
+      - property: file.name
+        direction: ASC

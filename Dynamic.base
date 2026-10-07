@@ -1,0 +1,31 @@
+filters:
+  and:
+    - file.ext == "md"
+properties:
+  file.tags:
+    displayName: Tags
+views:
+  - type: table
+    name: Links to here
+    filters:
+      and:
+        - file.hasLink(this.file)
+    order:
+      - file.name
+      - file.tags
+      - file.folder
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Linked from here
+    filters:
+      and:
+        - this.file.hasLink(file)
+    order:
+      - file.name
+      - file.tags
+      - file.folder
+    sort:
+      - property: file.name
+        direction: ASC
